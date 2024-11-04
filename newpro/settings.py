@@ -16,7 +16,6 @@ from configurations import (Configuration, values,)
 
 env = environ.Env()
 
-# .env dosyasının yolunu belirlemek daha güvenli olabilir
 environ.Env.read_env(env_file=str(Path(__file__).resolve().parent / ".env"))
 
 
